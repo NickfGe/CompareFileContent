@@ -9,9 +9,7 @@ public class MouseSensitive : MonoBehaviour, IPointerClickHandler, IPointerEnter
     [SerializeField] private int Id;
     public void OnPointerClick(PointerEventData eventData)
     {
-        //if (Id == 0) SceneManager.LoadScene("Encrypt");
-        //if (Id == 1) SceneManager.LoadScene("Decrypt");
-        //if (Id == 2) Application.Quit();
+        //if (Id == 1) /*CompareContent.Instance.CompareLines();*/ Debug.Log(0);
         if (Id == 3) SceneManager.LoadScene("Main");
         //if (Id == 10) return;
     }
